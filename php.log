@@ -1,0 +1,867 @@
+[14-Dec-2019 02:33:36 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:33:37 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 02:33:37 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 02:33:37 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576290817
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 02:33:38 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:33:38 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:18 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 4
+[14-Dec-2019 02:41:18 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:18 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:19 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 4
+[14-Dec-2019 02:41:19 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:19 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:21 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 4
+[14-Dec-2019 02:41:21 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:21 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize() in /Applications/MAMP/htdocs/output_view/function.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/output_view/profile.php(62): getFormData('username')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/function.php on line 182
+[14-Dec-2019 02:41:36 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:41:36 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 02:41:36 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 02:41:36 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576291296
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 02:41:38 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:38 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:40 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:40 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize() in /Applications/MAMP/htdocs/output_view/function.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/output_view/profile.php(62): getFormData('username')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/function.php on line 182
+[14-Dec-2019 02:41:41 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:41 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:50 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:50 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:41:50 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:41:50 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 02:41:50 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:41:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize() in /Applications/MAMP/htdocs/output_view/function.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/output_view/profile.php(62): getFormData('username')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/function.php on line 182
+[14-Dec-2019 02:41:52 UTC] デバッグ:クエリ失敗02
+[14-Dec-2019 02:41:52 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 02:50:34 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:50:35 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 02:50:35 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 02:50:35 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576291835
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 02:50:37 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:50:37 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:50:37 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => 
+    [email] => aaa@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:50:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize() in /Applications/MAMP/htdocs/output_view/function.php:178
+Stack trace:
+#0 /Applications/MAMP/htdocs/output_view/profile.php(62): getFormData('username')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/function.php on line 178
+[14-Dec-2019 02:55:57 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:55:57 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:55:57 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => 
+    [email] => aaa@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:55:57 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output_view/function.php:178
+Stack trace:
+#0 /Applications/MAMP/htdocs/output_view/profile.php(62): getFormData('username')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/function.php on line 178
+[14-Dec-2019 02:56:01 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:56:01 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:56:01 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => 
+    [email] => aaa@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:56:01 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /Applications/MAMP/htdocs/output_view/function.php:178
+Stack trace:
+#0 /Applications/MAMP/htdocs/output_view/profile.php(62): getFormData('username')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/function.php on line 178
+[14-Dec-2019 02:56:56 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:56:56 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:56:56 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => 
+    [email] => aaa@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:57:24 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:57:24 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:57:24 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => 
+    [email] => aaa@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:57:24 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 02:57:24 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:57:27 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:57:27 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:57:27 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:58:31 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:58:31 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:58:31 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:58:38 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:58:38 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:58:38 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => 
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:58:38 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 02:58:38 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:58:46 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:58:46 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:58:46 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:58:47 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 02:58:47 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 02:58:47 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 02:58:47 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 02:58:47 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:04:27 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:04:27 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 03:04:27 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 03:04:27 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576292667
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 03:04:29 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:04:29 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:04:29 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:04:37 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:04:37 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:04:37 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:04:37 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:04:37 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:13:34 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:13:34 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:13:34 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:13:58 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:13:58 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:13:58 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:14:04 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:14:04 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:14:04 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:14:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uploadImg() in /Applications/MAMP/htdocs/output_view/profile.php:12
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/profile.php on line 12
+[14-Dec-2019 03:14:12 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:14:12 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:14:12 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:14:14 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:14:14 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:14:14 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:14:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uploadImg() in /Applications/MAMP/htdocs/output_view/profile.php:12
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/profile.php on line 12
+[14-Dec-2019 03:15:10 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:15:10 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:15:10 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:15:14 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:15:14 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:15:14 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:15:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function uploadImg() in /Applications/MAMP/htdocs/output_view/profile.php:12
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/profile.php on line 12
+[14-Dec-2019 03:15:15 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:15:15 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:15:15 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:16:07 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:16:07 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:07 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:16:12 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:16:12 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:12 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] => apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:16:12 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:16:12 UTC] PHP Notice:  Undefined variable: pic in /Applications/MAMP/htdocs/output_view/profile.php on line 32
+[14-Dec-2019 03:16:12 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:14 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:16:14 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:14 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] =>  apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:16:36 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:16:36 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:36 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] =>  apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:16:41 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:16:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:41 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] =>  apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:16:41 UTC] PHP Notice:  Undefined variable: pic in /Applications/MAMP/htdocs/output_view/profile.php on line 13
+[14-Dec-2019 03:16:41 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:16:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:43 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:16:43 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:16:43 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] =>   apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:36:22 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:36:22 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:36:22 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] =>   apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:36:28 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:36:28 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:36:28 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => 
+    [username] =>   apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:36:28 UTC] デバッグ:画像アップロード処理
+[14-Dec-2019 03:36:28 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:36:28 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:36:30 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:36:30 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:36:30 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/42195bb564c2b4364f80a3a53bac49249035fc75.png
+    [username] =>    apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:38:00 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:38:00 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:38:00 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/42195bb564c2b4364f80a3a53bac49249035fc75.png
+    [username] =>    apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:38:00 UTC] デバッグ:画像アップロード処理
+[14-Dec-2019 03:38:00 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:38:00 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:38:02 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:38:02 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:38:02 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>     apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:38:27 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:38:27 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:38:27 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>     apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:38:27 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:38:27 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:40:07 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:40:07 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:40:07 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:40:23 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:40:23 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:40:23 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:40:50 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:40:50 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:40:50 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:41:01 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:41:01 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:41:01 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:42:33 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:42:33 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:42:33 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:44:26 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:44:26 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:44:26 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:44:40 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:44:40 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:44:40 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>      apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:44:40 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:44:40 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:44:41 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:44:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:44:41 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>       apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:44:43 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:44:43 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:44:43 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>       apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:44:43 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:44:43 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:49:28 UTC] デバッグ:ログアウト
+[14-Dec-2019 03:49:44 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:49:45 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 03:49:45 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 03:49:45 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576295385
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 03:49:47 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:49:47 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:49:47 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>        apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:49:51 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 03:49:51 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 03:49:51 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>        apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 03:49:51 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 03:49:51 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 08:35:52 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 08:35:52 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 08:35:52 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>         apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 08:35:58 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 08:35:58 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 08:35:58 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>         apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 08:35:58 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 08:35:58 UTC] デバッグ:クエリ成功02
