@@ -1,5 +1,9 @@
 <?php
 require('function.php');
+require('menu_bar.php');
+
+$u_id = $_SESSION['user_id'];
+
 
 ?>
 
@@ -8,12 +12,12 @@ $siteTitle = 'My page ';
 require('head.php');
 ?>
 
-<body>
-    <p>Share Beautiful View!</p>
-    <div class='right'>
-        <a href=' logout.php'>ログアウト</a>
-        <a href='profile.php'>プロフィール編集</a>
-    </div>
+
+
+
+<footer>
+    <p>&copy2019yutasb</p>
+</footer>
 </body>
 
 </html>

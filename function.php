@@ -26,6 +26,8 @@
     define('MSG07', 'エラーが発生しました。しばらく経ってからやり直してください');
     define('MSG08', 'パスワード（再入力）が一致していません');
     define('MSG09', 'メールアドレスまたはパスワードが違います');
+    define('MSG10', '正しくありません');
+
 
 
     //バリデーション
@@ -101,6 +103,14 @@
         }
     }
 
+
+    function validSelect($str, $key)
+    {
+        if (!preg_match("/^[0-9]+$/", $str)) {
+            global $err_msg;
+            $err_msg[$key] = MSG10;
+        }
+    }
 
     function dbConnect()
     {
@@ -213,5 +223,22 @@
                 global $err_msg;
                 $err_msg[$key] = $e->getMessage();
             }
+        }
+    }
+
+    function getCategory()
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT * FROM view_type";
+            $data = array();
+            $stmt = queryPost($dbh, $sql, $data);
+            if ($stmt) {
+                return $stmt->fetchAll();
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
         }
     }

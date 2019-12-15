@@ -865,3 +865,450 @@ Stack trace:
 
 [14-Dec-2019 08:35:58 UTC] デバッグ:バリデーションOK（プロフ編集）
 [14-Dec-2019 08:35:58 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 08:39:47 UTC] デバッグ:ログアウト
+[14-Dec-2019 08:39:58 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 08:39:59 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 08:39:59 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 08:39:59 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576312799
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 09:17:16 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 09:17:16 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 09:17:16 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>          apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 09:20:39 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 09:20:39 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 09:20:39 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 09:20:39 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576315239
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 09:50:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function validMaxLen() in /Applications/MAMP/htdocs/output_view/viewRegister.php:24
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 24
+[14-Dec-2019 10:07:20 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:07:20 UTC] デバッグ:パスワードがマッチ
+[14-Dec-2019 10:07:20 UTC] デバッグ:ログイン保持チェックなし
+[14-Dec-2019 10:07:20 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576318040
+    [login_limit] => 3600
+    [user_id] => 5
+)
+
+[14-Dec-2019 10:24:22 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:24:22 UTC] PHP Notice:  Undefined index: post_title in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 84
+[14-Dec-2019 10:24:22 UTC] PHP Notice:  Undefined index: post_title in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 84
+[14-Dec-2019 10:24:22 UTC] PHP Notice:  Undefined index: post_title in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 84
+[14-Dec-2019 10:24:22 UTC] PHP Notice:  Undefined index: post_title in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 84
+[14-Dec-2019 10:24:22 UTC] PHP Notice:  Undefined index: post_title in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 84
+[14-Dec-2019 10:24:53 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:25:20 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:25:20 UTC] デバッグ:バリデーションOK（投稿）
+[14-Dec-2019 10:25:20 UTC] PHP Notice:  Undefined variable: post_title in /Applications/MAMP/htdocs/output_view/viewRegister.php on line 45
+[14-Dec-2019 10:25:20 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:26:22 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:26:48 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:26:48 UTC] デバッグ:バリデーションOK（投稿）
+[14-Dec-2019 10:26:48 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:34:54 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 10:34:54 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:34:54 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>          apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 10:34:58 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 10:34:58 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:34:58 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>          apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 10:34:58 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 10:34:58 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:35:37 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:42:06 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:42:09 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:42:12 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 10:42:12 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:42:12 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>           apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 10:42:18 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 10:42:18 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:42:18 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>           apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 10:42:18 UTC] デバッグ:画像アップロード処理
+[14-Dec-2019 10:42:18 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 10:42:18 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:42:42 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:43:32 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:43:32 UTC] デバッグ:バリデーションOK（投稿）
+[14-Dec-2019 10:43:33 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:54:04 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 10:56:09 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:07:00 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:07:00 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:07:00 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>            apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:07:40 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:07:40 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:07:40 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>            apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:07:41 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:07:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:07:41 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>            apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:08:01 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:08:01 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:08:01 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>            apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:08:04 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:12:10 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:13:07 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:13:07 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:13:07 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>            apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:13:08 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:13:08 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:13:08 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>            apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:13:08 UTC] デバッグ:バリデーションOK（プロフ編集）
+[14-Dec-2019 11:13:08 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:13:12 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:13:14 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:13:17 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:22:35 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:22:38 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:22:38 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:22:38 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>             apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:23:17 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:23:17 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:23:17 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 5
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] =>             apple
+    [email] => aaa@gmail.com
+    [tel] => 1234567890
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$GO51g1M3BYkrV07aYSm3UuUIj6Q7xUOia69QffJ6xerh8pDEnaxBW
+    [delete_flg] => 0
+    [create_date] => 2019-12-13 14:31:54
+    [login_time] => 2019-12-13
+)
+
+[14-Dec-2019 11:23:20 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:23:22 UTC] デバッグ:ログアウト
+[14-Dec-2019 11:25:32 UTC] デバッグ:入力確認OK
+[14-Dec-2019 11:25:32 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:25:32 UTC] デバッグ:バリデーション01
+[14-Dec-2019 11:25:32 UTC] デバッグ:バリデーション02
+[14-Dec-2019 11:25:33 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:25:33 UTC] デバッグ:クエリOK
+[14-Dec-2019 11:25:33 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/mypage.php on line 5
+[14-Dec-2019 11:25:35 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:25:35 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:25:35 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:25:35 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:25:43 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:25:46 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/mypage.php on line 5
+[14-Dec-2019 11:25:47 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:25:47 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:25:48 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:25:48 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:02 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:06 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:26:06 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:26:06 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:06 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:09 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/mypage.php on line 5
+[14-Dec-2019 11:26:10 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:26:10 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:26:10 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:10 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:12 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/mypage.php on line 5
+[14-Dec-2019 11:26:14 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:17 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:26:17 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:26:17 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:17 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:41 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:26:41 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:26:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:41 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:41 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:26:41 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:26:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:41 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:47 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:26:47 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:26:47 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:26:47 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:26:51 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:00 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:04 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:27:04 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:27:04 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:04 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:27:13 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:14 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:27:14 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:27:14 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:14 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:27:38 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:27:38 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:27:38 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:38 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:27:40 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:44 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:46 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:27:46 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:27:46 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:27:46 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:28:09 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:28:09 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:28:09 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:28:09 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:30:17 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:30:17 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:30:17 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:30:17 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:30:17 UTC] デバッグ:画像アップロード処理
+[14-Dec-2019 11:30:17 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:30:23 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:30:25 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:30:25 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:30:25 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:30:25 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:31:17 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:31:17 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:31:17 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:31:17 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:31:19 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:31:19 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:31:19 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:31:19 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:31:40 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:31:40 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:31:40 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:31:40 UTC] デバッグ:取得したユーザー:
+[14-Dec-2019 11:31:41 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[14-Dec-2019 11:31:41 UTC] デバッグ:ユーザー情報取得
+[14-Dec-2019 11:31:41 UTC] デバッグ:クエリ成功02
+[14-Dec-2019 11:31:41 UTC] デバッグ:取得したユーザー:
+[15-Dec-2019 01:39:34 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/profile.php on line 5
+[15-Dec-2019 01:39:34 UTC] デバッグ:ユーザー情報取得
+[15-Dec-2019 01:39:34 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:39:34 UTC] デバッグ:取得したユーザー:
+[15-Dec-2019 01:40:03 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/output_view/mypage.php on line 5
+[15-Dec-2019 01:40:04 UTC] デバッグ:ログアウト
+[15-Dec-2019 01:40:13 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:40:13 UTC] デバッグ:パスワードがアンマッチ
+[15-Dec-2019 01:40:18 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:40:18 UTC] デバッグ:パスワードがマッチ
+[15-Dec-2019 01:40:18 UTC] デバッグ:ログイン保持チェックなし
+[15-Dec-2019 01:40:18 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1576374018
+    [login_limit] => 3600
+    [user_id] => 6
+)
+
+[15-Dec-2019 01:40:20 UTC] デバッグ:ユーザー情報取得
+[15-Dec-2019 01:40:20 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:40:20 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 6
+    [pic] => 
+    [username] => 
+    [email] => shibamoto.yuta@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$oxBXbRpkwQXyO8wF4Zh7..a4HecoAun6FvSTTiXBcXGyBlCDUNgMu
+    [delete_flg] => 0
+    [create_date] => 2019-12-14 11:25:33
+    [login_time] => 2019-12-14
+)
+
+[15-Dec-2019 01:41:26 UTC] デバッグ:ユーザー情報取得
+[15-Dec-2019 01:41:26 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:41:26 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 6
+    [pic] => 
+    [username] => 
+    [email] => shibamoto.yuta@gmail.com
+    [tel] => 
+    [myself] => 
+    [password] => $2y$10$oxBXbRpkwQXyO8wF4Zh7..a4HecoAun6FvSTTiXBcXGyBlCDUNgMu
+    [delete_flg] => 0
+    [create_date] => 2019-12-14 11:25:33
+    [login_time] => 2019-12-14
+)
+
+[15-Dec-2019 01:41:26 UTC] デバッグ:バリデーションOK（プロフ編集）
+[15-Dec-2019 01:41:26 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:41:29 UTC] デバッグ:ユーザー情報取得
+[15-Dec-2019 01:41:29 UTC] デバッグ:クエリ成功02
+[15-Dec-2019 01:41:29 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 6
+    [pic] => 
+    [username] =>  Y
+    [email] => shibamoto.yuta@gmail.com
+    [tel] => 0473664320
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$oxBXbRpkwQXyO8wF4Zh7..a4HecoAun6FvSTTiXBcXGyBlCDUNgMu
+    [delete_flg] => 0
+    [create_date] => 2019-12-14 11:25:33
+    [login_time] => 2019-12-14
+)
+

@@ -7,6 +7,11 @@ img {
   width: 100%;
   height: 800px;
 }
+.mainTitle {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
 
 .profImg {
   width: 80px;
@@ -19,4 +24,38 @@ a {
 
 .right {
   float: right;
+}
+
+.menu-bar {
+  background: rgb(148, 180, 238);
+  font-size: 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  float: right;
+}
+
+.menu li {
+  float: right;
+  margin: 20px;
+  margin-left: 40px;
+  list-style: none;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.contents {
+  text-align: center;
+  margin-top: 150px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
 }
