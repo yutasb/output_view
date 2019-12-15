@@ -4,6 +4,8 @@ require('function.php');
 require('menu_bar.php');
 
 $dbCategoryData = getCategory();
+$dbFormData = (!empty($p_id)) ? getViewPost($_SESSION['user_id'], $p_id) : '';
+
 
 if (!empty($_POST)) {
 
@@ -65,7 +67,7 @@ require('head.php');
 <body>
     <div class="contents">
         <h1>POST</h1>
-        <form method='post' enctype='mutipart/form-data'>
+        <form method='post' enctype='multipart/form-data'>
             <?php
             if (!empty($err_msg['common'])) echo $err_msg['common'];
             ?>

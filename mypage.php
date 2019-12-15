@@ -2,7 +2,7 @@
 require('function.php');
 require('menu_bar.php');
 
-$u_id = $_SESSION['user_id'];
+$postData = getPost();
 
 
 ?>
@@ -12,12 +12,21 @@ $siteTitle = 'My page ';
 require('head.php');
 ?>
 
+<body>
+    <div class='contents'>
+        <?php
+        if (!empty($postData)) :
+            foreach ($postData as $key => $val) :
+                ?>
+                <img src="<?php echo showImg($val['pic1']); ?> ">
+                <p><?php echo ($val['post_title']); ?></p>
+    </div>
 
+<?php
+    endforeach;
+endif;
+?>
 
-
-<footer>
-    <p>&copy2019yutasb</p>
-</footer>
 </body>
 
 </html>

@@ -13,8 +13,18 @@
         }
     }
 
+    //================================
+    // セッション準備・セッション有効期限を延ばす
+    //================================
+    //セッションファイルの置き場を変更する（/var/tmp/以下に置くと30日は削除されない）
+    session_save_path("/var/tmp/");
+    //ガーベージコレクションが削除するセッションの有効期限を設定（30日以上経っているものに対してだけ１００分の１の確率で削除）
+    ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 30);
+    //ブラウザを閉じても削除されないようにクッキー自体の有効期限を延ばす
+    ini_set('session.cookie_lifetime ', 60 * 60 * 24 * 30);
     session_start();
     session_regenerate_id();
+
 
     //定数管理
     define('MSG01', '入力必須です');
@@ -240,5 +250,76 @@
             }
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
+    function getViewPost($u_id, $p_id)
+    {
+        debug('投稿情報取得');
+        debug('ユーザーid:' . $u_id);
+        debug('投稿id:' . $p_id);
+
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT * FROM view_post WHERE user_id=:u_id AND id=:p_id AND delete_flg=0";
+            $data = array(':u_id' => $u_id, ':p_id' => $p_id);
+            $stmt = queryPost($dbh, $sql, $data);
+
+            if ($stmt) {
+                return $stmt->fetch(PDO::FETCH_ASSOC);
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
+    // function getPost()
+    // {
+    //     try {
+    //         $dbh = dbConnect();
+    //         $sql = "SELECT * FROM view_post WHERE delete_flg=0";
+    //         $data = array();
+    //         $stmt = queryPost($dbh, $sql, $data);
+
+    //         if ($stmt) {
+    //             return $stmt->fetchAll();
+    //             debug('クエリ成功（投稿一覧）');
+    //         } else {
+    //             return false;
+    //             debug('クエリ失敗（投稿一覧）');
+    //         }
+    //     } catch (Exception $e) {
+    //         error_log('エラー発生:' . $e->getMessage());
+    //     }
+    // }
+
+    function getPost()
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT * FROM `view_post` WHERE delete_flg = 0";
+            $data = array();
+            $stmt = queryPost($dbh, $sql, $data);
+
+            if ($stmt) {
+                return $stmt->fetchAll();
+                debug('クエリ成功（投稿一覧）');
+            } else {
+                return false;
+                debug('クエリ失敗（投稿一覧）');
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
+    function showImg($path)
+    {
+        if (empty($path)) {
+            return 'img/sample-img.png';
+        } else {
+            return $path;
         }
     }
