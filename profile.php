@@ -78,6 +78,7 @@ require('head.php');
             </div>
             <input type='submit' value='変更する'>
         </form>
+        <a href='logout.php'>Logout</a>　|　<a href='delete.php'>退会する</a>
     </div>
 </body>
 

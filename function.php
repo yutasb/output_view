@@ -315,11 +315,49 @@
         }
     }
 
+    function getMyPost($u_id)
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT * FROM `view_post` WHERE user_id=:u_id AND delete_flg = 0";
+            $data = array(':u_id' => $u_id);
+            $stmt = queryPost($dbh, $sql, $data);
+
+            if ($stmt) {
+                return $stmt->fetchAll();
+                debug('クエリ成功（自身投稿一覧）');
+            } else {
+                return false;
+                debug('クエリ失敗（自身投稿一覧）');
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
     function showImg($path)
     {
         if (empty($path)) {
             return 'img/sample-img.png';
         } else {
             return $path;
+        }
+    }
+
+    function checkViewPost($p_id)
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT p.id,p.post_title,p.when_see,p.where_see,p.comment,p.pic1,p.pic2,p.pic3,p.user_id,p.create_date,t.name AS type
+                    FROM view_post AS p LEFT JOIN view_type AS t ON p.type_id = t.id WHERE p.id=:p_id AND p.delete_flg=0 AND t.delete_flg=0";
+            $data = array(':p_id' => $p_id);
+            $stmt = queryPost($dbh, $sql, $data);
+            if ($stmt) {
+                return $stmt->fetch(PDO::FETCH_ASSOC);
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMesssaeg());
         }
     }

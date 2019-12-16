@@ -3,9 +3,10 @@
 require('function.php');
 require('menu_bar.php');
 
-$dbCategoryData = getCategory();
+$p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
 $dbFormData = (!empty($p_id)) ? getViewPost($_SESSION['user_id'], $p_id) : '';
-
+$dbCategoryData = getCategory();
+$edit_flg = (empty($dbFormData)) ? false : true;
 
 if (!empty($_POST)) {
 
@@ -44,8 +45,15 @@ if (!empty($_POST)) {
         debug('バリデーションOK（投稿）');
         try {
             $dbh = dbConnect();
-            $sql = "INSERT INTO view_post (post_title,type_id,when_see,where_see,comment,pic1,pic2,pic3,user_id,create_date) VALUES (:title,:type,:when_see,:where_see,:comment,:pic1,:pic2,:pic3,:u_id,:date)";
-            $data = array(':title' => $title, ':type' => $view_type, ':when_see' => $when_see, ':where_see' => $where_see, ':comment' => $comment, ':pic1' => $pic1, ':pic2' => $pic2, ':pic3' => $pic3, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
+            if ($edit_flg) {
+                debug('DB編集（投稿）');
+                $sql = "UPDATE view_post SET post_title=:title, type_id=:type, when_see=:when_see, where_see=:where_see, comment=:comment, pic1=:pic1, pic2=:pic2, pic3=:pic3 WHERE user_id=:u_id AND id=:p_id";
+                $data = array(':title' => $title, ':type' => $view_type, ':when_see' => $when_see, ':where_see' => $where_see, ':comment' => $comment, ':pic1' => $pic1, ':pic2' => $pic2, ':pic3' => $pic3, ':u_id' => $_SESSION['user_id'], ':p_id' => $p_id);
+            } else {
+                debug('DB新規登録（投稿）');
+                $sql = "INSERT INTO view_post (post_title,type_id,when_see,where_see,comment,pic1,pic2,pic3,user_id,create_date) VALUES (:title,:type,:when_see,:where_see,:comment,:pic1,:pic2,:pic3,:u_id,:date)";
+                $data = array(':title' => $title, ':type' => $view_type, ':when_see' => $when_see, ':where_see' => $where_see, ':comment' => $comment, ':pic1' => $pic1, ':pic2' => $pic2, ':pic3' => $pic3, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
+            }
             $stmt = queryPost($dbh, $sql, $data);
 
             if ($stmt) {
@@ -60,7 +68,7 @@ if (!empty($_POST)) {
 
 ?>
 <?php
-$siteTitle = '投稿　';
+$siteTitle = (!$edit_flg) ? '投稿' : '編集';
 require('head.php');
 ?>
 
@@ -74,7 +82,7 @@ require('head.php');
 
             <div class='input_form'>
                 <?php if (!empty($err_msg['title'])) echo $err_msg['title']; ?><br>
-                タイトル<input type='text' name='title' value="<?php if (!empty($_POST['title'])) echo $_POST['title']; ?>">
+                タイトル<input type='text' name='title' value="<?php echo getFormData('post_title'); ?>">
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['view_type'])) echo $err_msg['view_type']; ?><br>
@@ -92,16 +100,16 @@ require('head.php');
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['when_see'])) echo $err_msg['when_see']; ?><br>
-                日付<input type='date' name='when_see' value="<?php if (!empty($_POST['when_see'])) echo $_POST['when_see']; ?>">
+                日付<input type='date' name='when_see' value="<?php echo getFormData('when_see'); ?>">
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['where_see'])) echo $err_msg['where_see']; ?><br>
-                場所<input type='text' name='where_see' value="<?php if (!empty($_POST['where_see'])) echo $_POST['where_see']; ?>">
+                場所<input type='text' name='where_see' value="<?php echo getFormData('where_see'); ?>">
             </div>
 
             <div class="input_form">
                 <?php if (!empty($err_msg['comment'])) echo $err_msg['comment']; ?><br>
-                感想<textarea type='text' name='comment'><?php if (!empty($_POST['comment'])) echo $_POST['comment']; ?></textarea>
+                感想<textarea type='text' name='comment'><?php echo getFormData('comment'); ?></textarea>
             </div>
             <div class='input_form'>
                 写真1
@@ -118,7 +126,7 @@ require('head.php');
                 <input type='file' name='pic3' class='postImgPost'><br>
                 <img class='postImg' src=" <?php echo getFormData('pic3'); ?>" style="<?php if (empty(getFormData('pic3'))) echo 'display:none;' ?>">
             </div>
-            <input type='submit' value='投稿'>
+            <input type='submit' value="<?php echo (!$edit_flg) ? '投稿する' : '更新する'; ?>">
         </form>
     </div>
 </body>
