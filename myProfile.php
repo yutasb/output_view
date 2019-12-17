@@ -9,6 +9,7 @@ if (!empty($_POST)) {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $tel = $_POST['tel'];
+    $likeView = $_POST['likeView'];
     $myself = $_POST['myself'];
     $pic = (!empty($_FILES['pic']['name'])) ? uploadImg($_FILES['pic'], 'pic') : '';
     $pic = (empty($pic) && !empty($dbFormData['pic'])) ? $dbFormData['pic'] : $pic;
@@ -29,8 +30,8 @@ if (!empty($_POST)) {
 
         try {
             $dbh = dbConnect();
-            $sql = "UPDATE users SET username=:u_name, email=:email, tel=:tel, pic=:pic, myself=:myself WHERE id=:u_id";
-            $data = array(':u_name' => $username, ':email' => $email, ':tel' => $tel, ':pic' => $pic, ':myself' => $myself, ':u_id' => $dbFormData['id']);
+            $sql = "UPDATE users SET username=:u_name, email=:email, tel=:tel, pic=:pic,likeView=:likeView, myself=:myself WHERE id=:u_id";
+            $data = array(':u_name' => $username, ':email' => $email, ':tel' => $tel, ':pic' => $pic, ':likeView' => $likeView, ':myself' => $myself, ':u_id' => $dbFormData['id']);
             $stmt = queryPost($dbh, $sql, $data);
             if ($stmt) {
                 header("Location:mypage.php");
@@ -71,6 +72,10 @@ require('head.php');
             <div class='input_form'>
                 <?php if (!empty($err_msg['tel'])) echo $err_msg['tel']; ?>
                 電話番号<input type='text' name='tel' value="<?php echo getFormData('tel'); ?>">
+            </div>
+            <div class='input_form'>
+                <?php if (!empty($err_msg['likeView'])) echo $err_msg['likeView']; ?>
+                お気に入りの絶景<input type='text' name='likeView' value="<?php echo getFormData('likeView'); ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['myself'])) echo $err_msg['myself']; ?>

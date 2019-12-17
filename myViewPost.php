@@ -1,3 +1,4 @@
+<!-- 自分の投稿のみを表示するページ -->
 <?php
 require('function.php');
 require('menu_bar.php');
@@ -21,7 +22,7 @@ require('head.php');
                 ?>
                 <a href="viewRegister.php<?php echo '?p_id=' . $val['id']; ?>">
                     <img src="<?php echo showImg($val['pic1']); ?> ">
-                    <p><span><?php echo ($val['user_id']); ?></span><?php echo ($val['post_title']); ?></p>
+                    <p><?php echo ($val['post_title']); ?></p>
                 </a>
 
 

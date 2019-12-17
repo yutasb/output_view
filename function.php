@@ -275,31 +275,11 @@
         }
     }
 
-    // function getPost()
-    // {
-    //     try {
-    //         $dbh = dbConnect();
-    //         $sql = "SELECT * FROM view_post WHERE delete_flg=0";
-    //         $data = array();
-    //         $stmt = queryPost($dbh, $sql, $data);
-
-    //         if ($stmt) {
-    //             return $stmt->fetchAll();
-    //             debug('クエリ成功（投稿一覧）');
-    //         } else {
-    //             return false;
-    //             debug('クエリ失敗（投稿一覧）');
-    //         }
-    //     } catch (Exception $e) {
-    //         error_log('エラー発生:' . $e->getMessage());
-    //     }
-    // }
-
     function getPost()
     {
         try {
             $dbh = dbConnect();
-            $sql = "SELECT * FROM `view_post` WHERE delete_flg = 0";
+            $sql = "SELECT p.id, p.post_title, p.pic1, u.pic, u.id AS uid FROM view_post AS p LEFT JOIN users AS u ON p.user_id = u.id WHERE p.delete_flg=0 AND u.delete_flg= 0";
             $data = array();
             $stmt = queryPost($dbh, $sql, $data);
 
@@ -335,6 +315,26 @@
         }
     }
 
+    function getMyPostList($category)
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT p.id, p.post_title, p.pic1, u.pic, t.name, u.id AS uid FROM view_post AS p JOIN users AS u ON p.user_id = u.id  JOIN view_type AS t ON p.type_id = t.id WHERE p.delete_flg=0 AND u.delete_flg= 0";
+            if (!empty($category)) $sql .= 'AND p.type_id=' . $category;
+            $data = array();
+            $stmt = queryPost($dbh, $sql, $data);
+            if ($stmt) {
+                $rst['data'] = $stmt->fetchAll();
+                return $rst;
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
+
     function showImg($path)
     {
         if (empty($path)) {
@@ -359,5 +359,23 @@
             }
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMesssaeg());
+        }
+    }
+
+    function checkOtherProfile($u_id)
+    {
+
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT id,pic,username,likeView,myself FROM users WHERE id=:u_id ";
+            $data = array(':u_id' => $u_id);
+            $stmt = queryPost($dbh, $sql, $data);
+            if ($stmt) {
+                return $stmt->fetch(PDO::FETCH_ASSOC);
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
         }
     }

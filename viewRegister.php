@@ -1,3 +1,4 @@
+<!-- 投稿編集ページ -->
 <?php
 
 require('function.php');
@@ -59,6 +60,18 @@ if (!empty($_POST)) {
             if ($stmt) {
                 header('Location:mypage.php');
             }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+            $err_msg['common'] = MSG07;
+        }
+    }
+
+    if (!empty($_POST['delete'])) {
+        try {
+            $dbh = dbConnect();
+            $sql = "UPDATE view_post SET delete_flg=1 WHERE user_id=:u_id AND id=:p_id";
+            $data = array(':u_id' =>  $_SESSION['user_id'], ':p_id' => $p_id);
+            $stmt = queryPost($dbh, $sql, $data);
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());
             $err_msg['common'] = MSG07;
@@ -126,7 +139,8 @@ require('head.php');
                 <input type='file' name='pic3' class='postImgPost'><br>
                 <img class='postImg' src=" <?php echo getFormData('pic3'); ?>" style="<?php if (empty(getFormData('pic3'))) echo 'display:none;' ?>">
             </div>
-            <input type='submit' value="<?php echo (!$edit_flg) ? '投稿する' : '更新する'; ?>">
+            <input type='submit' value="<?php echo (!$edit_flg) ? '投稿する' : '更新する'; ?>"><br>
+            <input type='submit' name='delete' value="<?php echo (!$edit_flg) ? '' : '削除する'; ?>" style="<?php if (empty($edit_flg)) echo 'display:none;' ?>">
         </form>
     </div>
 </body>

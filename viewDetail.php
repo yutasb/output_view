@@ -1,3 +1,4 @@
+<!-- 投稿の中身を見るページ -->
 <?php
 
 require('function.php');

@@ -60,23 +60,25 @@ require('head.php');
 ?>
 
 <body>
-    <h1>アカウント登録</h1>
-    <form method='post' action=''>
-        <?php if (!empty($err_msg['common'])) echo $err_msg['common']; ?><br>
-        <div class="input_form">
-            <?php if (!empty($err_msg['email'])) echo $err_msg['email']; ?><br>
-            メールアドレス<input type='text' name='email' value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>">
-        </div>
-        <div class="input_form">
-            <?php if (!empty($err_msg['pass'])) echo $err_msg['pass']; ?><br>
-            パスワード<input type='password' name='pass' value="<?php if (!empty($_POST['pass'])) echo $_POST['pass']; ?>">
-        </div>
-        <div class="input_form">
-            <?php if (!empty($err_msg['pass_re'])) echo $err_msg['pass_re']; ?><br>
-            パスワード（再入力）<input type='password' name='pass_re' value='<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re']; ?>'>
-        </div>
-        <input type='submit' value='登録'>
-    </form>
+    <div class="contents">
+        <h1>アカウント登録</h1>
+        <form method='post' action=''>
+            <?php if (!empty($err_msg['common'])) echo $err_msg['common']; ?><br>
+            <div class="input_form">
+                <?php if (!empty($err_msg['email'])) echo $err_msg['email']; ?><br>
+                メールアドレス<input type='text' name='email' value="<?php if (!empty($_POST['email'])) echo $_POST['email']; ?>">
+            </div>
+            <div class="input_form">
+                <?php if (!empty($err_msg['pass'])) echo $err_msg['pass']; ?><br>
+                パスワード<input type='password' name='pass' value="<?php if (!empty($_POST['pass'])) echo $_POST['pass']; ?>">
+            </div>
+            <div class="input_form">
+                <?php if (!empty($err_msg['pass_re'])) echo $err_msg['pass_re']; ?><br>
+                パスワード（再入力）<input type='password' name='pass_re' value='<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re']; ?>'>
+            </div>
+            <input type='submit' value='登録'>
+        </form>
+    </div>
 </body>
 
 </html>
