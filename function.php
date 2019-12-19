@@ -319,14 +319,22 @@
     {
         try {
             $dbh = dbConnect();
-            $sql = "SELECT p.id, p.post_title, p.pic1, u.pic, t.name, u.id AS uid FROM view_post AS p JOIN users AS u ON p.user_id = u.id  JOIN view_type AS t ON p.type_id = t.id WHERE p.delete_flg=0 AND u.delete_flg= 0";
-            if (!empty($category)) $sql .= 'AND p.type_id=' . $category;
+            $sql = "SELECT u.id AS uid, u.pic, p.id, p.post_title, p.pic1, p.type_id FROM view_post AS p JOIN users AS u ON p.user_id = u.id WHERE p.delete_flg=0 AND u.delete_flg= 0 ";
+            if (!empty($category)) $sql .= "AND p.type_id=" . $category;
             $data = array();
             $stmt = queryPost($dbh, $sql, $data);
+
+            debug($sql);
             if ($stmt) {
-                $rst['data'] = $stmt->fetchAll();
-                return $rst;
+                debug('クエリ成功（検索）');
+                $stmt->fetch(PDO::FETCH_ASSOC);
+                return $stmt;
+                if (!empty($category)) {
+                    debug('type_id:' . $category);
+                    debug($sql);
+                }
             } else {
+                debug('クエリ失敗（検索）');
                 return false;
             }
         } catch (Exception $e) {
@@ -377,5 +385,19 @@
             }
         } catch (Exception $e) {
             error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
+    function appendGetParam($arr_del_key = array())
+    {
+        if (!empty($_GET)) {
+            $str = '?';
+            foreach ($_GET as $key => $val) {
+                if (!in_array($key, $arr_del_key, true)) { //取り除きたいパラメータじゃない場合にurlにくっつけるパラメータを生成
+                    $str .= $key . '=' . $val . '&';
+                }
+            }
+            $str = mb_substr($str, 0, -1, "UTF-8");
+            return $str;
         }
     }

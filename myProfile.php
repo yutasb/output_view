@@ -63,7 +63,7 @@ require('head.php');
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['username'])) echo $err_msg['username']; ?>
-                ユーザー名<input type='text' name='username' value=" <?php echo getFormData('username'); ?>">
+                ユーザー名<input type='text' name='username' value="<?php echo getFormData('username'); ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['email'])) echo $err_msg['email']; ?>

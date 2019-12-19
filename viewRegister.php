@@ -95,7 +95,7 @@ require('head.php');
 
             <div class='input_form'>
                 <?php if (!empty($err_msg['title'])) echo $err_msg['title']; ?><br>
-                タイトル<input type='text' name='title' value="<?php echo getFormData('post_title'); ?>">
+                タイトル<input type='text' name='title' value="<?php echo getFormData('title'); ?>">
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['view_type'])) echo $err_msg['view_type']; ?><br>

@@ -24,7 +24,9 @@ require('head.php');
         <img src="<?php echo showImg($checkView['pic1']); ?>">
         <img src="<?php echo showImg($checkView['pic2']); ?>">
         <img src="<?php echo showImg($checkView['pic3']); ?>">
-        <?php echo $checkView['comment']; ?>
+        <?php echo $checkView['comment']; ?><br><br>
+        <a href="mypage.php<?php echo appendGetParam((array('p_id'))); ?>">戻る</a>
+
     </div>
 </body>
 

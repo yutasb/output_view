@@ -7,6 +7,9 @@ $category = (!empty($_GET['c_id'])) ? $_GET['c_id'] : '';
 $dbPostData = getMyPostList($category);
 $dbCategoryData = getCategory();
 
+//検索なし用
+$dbgetpost = getPost();
+
 
 
 
@@ -19,7 +22,7 @@ require('head.php');
 
 <body>
     <div class="side">
-        <form method='get'>
+        <form method='get' name=''>
             <p>カテゴリー</p>
             <select name='c_id'>
                 <option value='0' <?php if (getFormData('c_id', true) == 0) {
@@ -41,16 +44,18 @@ require('head.php');
     </div>
     <div class='contents'>
         <?php
-        foreach ($dbPostData['data'] as $key => $val) :
+        foreach ($dbPostData as $key => $val) {
+            debug($val['id'] . $val['uid'] . $val['post_title'] . $val['type_id'])
             ?>
-            <a href="viewDetail.php<?php echo '?p_id=' . $val['id']; ?>">
+
+            <a href="viewDetail.php<?php echo (!empty(appendGetParam())) ? appendGetParam() . '&p_id=' . $val['id'] : '?p_id=' . $val['id']; ?>">
                 <img src="<?php echo showImg($val['pic1']); ?> ">
                 <p><a href="otherProfile.php<?php echo '?u_id=' . $val['uid']; ?>"><img src="<?php echo showImg($val['pic']); ?>" class='postIcon'></a>　<?php echo ($val['post_title']); ?></p><br>
             </a>
 
 
         <?php
-        endforeach;
+        }
 
         ?>
 
