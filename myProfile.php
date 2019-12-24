@@ -50,7 +50,7 @@ require('head.php');
 
 <body>
     <div class="contents">
-        <h1>プロフィール編集</h1>
+        <h1>My Profile</h1>
         <form method='post' enctype="multipart/form-data">
             <?php
             if (!empty($err_msg['common'])) echo $err_msg['common'];

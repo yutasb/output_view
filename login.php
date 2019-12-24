@@ -67,7 +67,7 @@ require('head.php')
                 </label>
                 <br>
 
-                <input type='submit' value='ログイン'>
+                <input type='submit' value='ログイン' class='loginSubmit'>
             </form>
         </div>
     </div>

@@ -16,6 +16,7 @@ require('head.php');
 
 <body>
     <div class='contents'>
+        <h1>My POST</h1>
         <?php
         if (!empty($myPostData)) :
             foreach ($myPostData as $key => $val) :

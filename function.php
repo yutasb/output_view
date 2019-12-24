@@ -352,6 +352,23 @@
         }
     }
 
+    function checkIcon()
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT u.id, u.username, u.pic, p.id FROM view_post AS p JOIN users As u ON p.user_id=u.id WHERE u.delete_flg=0 AND p.delete_flg=0";
+            $data = array();
+            $stmt = queryPost($dbh, $sql, $data);
+            if ($stmt) {
+                return $stmt->fetch(PDO::FETCH_ASSOC);
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
     function checkViewPost($p_id)
     {
         try {

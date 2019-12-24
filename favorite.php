@@ -13,7 +13,9 @@ require('head.php');
 ?>
 
 <body>
+
     <div class="contents">
+        <h1>Favorite</h1>
         <?php if (!empty($myLikePost)) :
             foreach ($myLikePost as $key => $val) :
                 ?>

@@ -52,6 +52,7 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: white;
   color: rgba(83, 167, 245, 0.979);
+  cursor: pointer;
 }
 
 input[type="text"],
@@ -64,12 +65,33 @@ input[type="password"] {
   background: #f6f5f4;
 }
 
-.contents img {
+input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  background: #8dd5ff;
+  color: white;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.loginSubmit {
+  background: white !important;
+  color: rgb(20, 173, 173) !important;
+  font-weight: bold;
+}
+
+.contents img,
+.mypageContents img {
   width: 40%;
   height: 400px;
 }
 .side {
   margin-top: 130px;
+  background-color: rgba(83, 167, 245, 0.979);
+  width: 400px;
+  margin-left: 480px;
+  padding: 20px;
 }
 
 .mainTitle {
@@ -110,17 +132,46 @@ a {
 }
 
 .menu a {
+  display: block;
   text-decoration: none;
   color: black;
 }
 
-.menu1 {
-  display: inline-block;
+.menu--bar {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 7%;
+  height: 10px;
+  background: rgb(14, 198, 211);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menu li:nth-child(1):hover ~ .menu--bar {
+  left: 92%;
+}
+.menu li:nth-child(2):hover ~ .menu--bar {
+  left: 81%;
+}
+.menu li:nth-child(3):hover ~ .menu--bar {
+  left: 71%;
+}
+.menu li:nth-child(4):hover ~ .menu--bar {
+  left: 63%;
 }
 
 .contents {
   text-align: center;
   margin-top: 150px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mypageContents {
+  text-align: center;
+  margin-top: 30px !important;
   width: 100%;
   margin: 0 auto;
 }
@@ -149,7 +200,8 @@ a {
   margin-left: 30px;
   color: #ddd;
 }
-.icn-like:hover {
+.icn-like:hover,
+.top-icn-like:hover {
   cursor: pointer;
 }
 .icn-like.active {
@@ -157,8 +209,17 @@ a {
   color: #fe8a8b;
 }
 
+.top-icn-like {
+  color: #ddd;
+}
+
+.top-icn-like.active {
+  color: #fe8a8b;
+}
+
 .content-box {
-  background-color: rgb(54, 167, 233);
+  background: #22aeff;
+
   padding: 30px;
   width: 530px;
   height: 440px;
@@ -166,9 +227,57 @@ a {
   margin-top: 100px;
 }
 
+.img {
+  width: 100%;
+}
+
+#js-switch-img-main {
+  overflow: hidden;
+  width: 700px;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+.img-subs {
+  float: right;
+  width: 200px;
+}
+
 .js-switch-img-sub {
   width: 180px !important;
   height: 100px !important;
-  margin-left: 10px;
   margin-top: 10px;
+  display: block;
+}
+
+.detail-prof {
+  float: left;
+  margin-right: 5px;
+  margin-left: 40px;
+}
+
+.detail-prof img {
+  width: 150px;
+  height: 200px;
+}
+
+.detail_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.detail_when {
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.badge {
+  padding: 5px 10px;
+  color: white;
+  background: #72d3fa;
+  margin-right: 10px;
+  font-size: 16px;
+  vertical-align: middle;
+  position: relative;
+  top: -4px;
 }
