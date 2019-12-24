@@ -5,8 +5,8 @@
 
         <ul class='menu'>
 
-            <li><a href='myProfile.php'>Myprofile</a></li>
-            <li><a href='msg.php'>Message</a></li>
+            <li class='menu1'><a href='myProfile.php'>Myprofile</a></li>
+            <li><a href='favorite.php'>Favorite</a></li>
             <li><a href='myViewPost.php'>My Post</a></li>
             <li><a href='viewRegister.php'>Post</a></li>
 

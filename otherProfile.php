@@ -35,20 +35,21 @@ require('head.php');
     <div class='contents'>
         <form method='post'>
             <img src="<?php echo showImg($checkOther['pic']); ?>" class='profImg'><br>
-            　ユーザー名：<?php echo $checkOther['username']; ?><br>
-            お気に入りの絶景：<?php echo $checkOther['likeView']; ?><br>
-            ひとこと：<?php echo $checkOther['myself']; ?><br><br>
+            　ユーザー名<br><?php echo $checkOther['username']; ?><br>
+            お気に入りの絶景<br><?php echo $checkOther['likeView']; ?><br>
+            ひとこと<br><?php echo $checkOther['myself']; ?><br><br>
             <input type='submit' name='toMsg' value='メッセージを送る'>
         </form>
 
         <?php
         if (!empty($myPostData)) :
             foreach ($myPostData as $key => $val) :
+                debug($val['id']);
                 ?>
-
-                <img src="<?php echo showImg($val['pic1']); ?> ">
-                <p><?php echo ($val['post_title']); ?></p>
-
+                <a href="viewDetail.php?p_id=<?php echo $val['id']; ?>">
+                    <img src=" <?php echo showImg($val['pic1']); ?> ">
+                    <p><?php echo ($val['post_title']); ?></p>
+                </a>
 
 
         <?php

@@ -52,6 +52,10 @@ require('head.php');
                 <img src="<?php echo showImg($val['pic1']); ?> ">
                 <p><a href="otherProfile.php<?php echo '?u_id=' . $val['uid']; ?>"><img src="<?php echo showImg($val['pic']); ?>" class='postIcon'></a>　<?php echo ($val['post_title']); ?></p><br>
             </a>
+            <i class="fa fa-heart icn-like js-click-like <?php if (isLike($_SESSION['user_id'], $val['id'])) {
+                                                                    echo 'active';
+                                                                } ?>" aria-hidden="true" data-viewid="<?php echo $val['id']; ?>"></i>
+
 
 
         <?php
@@ -60,6 +64,31 @@ require('head.php');
         ?>
 
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script>
+        var $like,
+            likeViewId;
+        $like = $('.js-click-like') || null;
+        //data属性をjsで取得する場合には、.dataを使う。
+        likeViewId = $like.data('viewid') || null;
+        if (likeViewId !== undefined && likeViewId !== null) {
+            $like.on('click', function() {
+                var $this = $(this);
+                $.ajax({
+                    type: 'POST',
+                    url: 'ajaxLike.php',
+                    data: {
+                        viewid: likeViewId
+                    }
+                }).done(function(data) {
+                    console.log('Ajax Success');
+                    $this.toggleClass('active');
+                }).fail(function(msg) {
+                    console.log('Ajax Error');
+                });
+            });
+        }
+    </script>
 </body>
 
 </html>

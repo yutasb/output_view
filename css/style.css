@@ -5,26 +5,41 @@ body {
 
 .headImg {
   width: 100%;
-  height: 900px;
+  height: 600px;
   position: relative;
 }
 
 .topMessage {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 150px;
   font-size: 80px;
   font-weight: bold;
 }
 
 .topPageButton {
-  position: absolute;
-  top: 400px;
-  left: 650px;
+  margin-top: 400px;
+  margin-left: 500px;
+}
+
+.discription1,
+.discription2,
+.discription3 {
+  margin-top: 30px;
+  float: left;
+  background-color: rgba(92, 192, 238, 0.7);
+  margin-left: 20px;
+  padding: 20px;
+  text-align: center;
+  line-height: 3em;
+}
+
+.discriptions {
+  margin: 0 auto;
 }
 
 input[type="button"] {
-  width: 180px;
+  width: 280px;
   height: 60px;
   text-align: center;
   margin-left: 30px;
@@ -37,6 +52,16 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: white;
   color: rgba(83, 167, 245, 0.979);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+  width: 500px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  background: #f6f5f4;
 }
 
 .contents img {
@@ -89,9 +114,21 @@ a {
   color: black;
 }
 
+.menu1 {
+  display: inline-block;
+}
+
 .contents {
   text-align: center;
   margin-top: 150px !important;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mycontents {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .postIcon {
@@ -99,9 +136,39 @@ a {
   height: 40px !important;
 }
 
-footer {
-  position: absolute;
+.footer {
   bottom: 0;
   margin: 0 auto;
+
   text-align: center;
+  background-color: rgb(17, 90, 226);
+  padding: 10px;
+}
+
+.icn-like {
+  margin-left: 30px;
+  color: #ddd;
+}
+.icn-like:hover {
+  cursor: pointer;
+}
+.icn-like.active {
+  margin-left: 30px;
+  color: #fe8a8b;
+}
+
+.content-box {
+  background-color: rgb(54, 167, 233);
+  padding: 30px;
+  width: 530px;
+  height: 440px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.js-switch-img-sub {
+  width: 180px !important;
+  height: 100px !important;
+  margin-left: 10px;
+  margin-top: 10px;
 }

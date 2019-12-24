@@ -401,3 +401,40 @@
             return $str;
         }
     }
+
+    function isLike($u_id, $p_id)
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT * FROM view_like WHERE view_id=:p_id AND user_id = :u_id";
+            $data = array(':u_id' => $u_id, ':p_id' => $p_id);
+            $stmt = queryPost($dbh, $sql, $data);
+
+            if ($stmt->rowCount()) {
+                debug('お気に入り');
+                return true;
+            } else {
+                debug('お気に入りではない');
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }
+
+    function getMyLike($u_id)
+    {
+        try {
+            $dbh = dbConnect();
+            $sql = "SELECT * FROM view_like AS l JOIN view_post AS p ON l.view_id = p.id WHERE l.user_id = :u_id";
+            $data = array(':u_id' => $u_id);
+            $stmt = queryPost($dbh, $sql, $data);
+            if ($stmt) {
+                return $stmt->fetchAll();
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            error_log('エラー発生:' . $e->getMessage());
+        }
+    }

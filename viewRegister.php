@@ -95,11 +95,11 @@ require('head.php');
 
             <div class='input_form'>
                 <?php if (!empty($err_msg['title'])) echo $err_msg['title']; ?><br>
-                タイトル<input type='text' name='title' value="<?php echo getFormData('title'); ?>">
+                タイトル<br><input type='text' name='title' value="<?php echo getFormData('post_title'); ?>">
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['view_type'])) echo $err_msg['view_type']; ?><br>
-                カテゴリ
+                カテゴリ<br>
                 <select name='view_type'>
                     <option value='0'>選択してください</option>
                     <?php foreach ($dbCategoryData as $key => $val) { ?>
@@ -113,17 +113,17 @@ require('head.php');
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['when_see'])) echo $err_msg['when_see']; ?><br>
-                日付<input type='date' name='when_see' value="<?php echo getFormData('when_see'); ?>">
+                日付<br><input type='date' name='when_see' value="<?php echo getFormData('when_see'); ?>">
             </div>
             <div class="input_form">
                 <?php if (!empty($err_msg['where_see'])) echo $err_msg['where_see']; ?><br>
-                場所<input type='text' name='where_see' value="<?php echo getFormData('where_see'); ?>">
+                場所<br><input type='text' name='where_see' value="<?php echo getFormData('where_see'); ?>">
             </div>
 
             <div class="input_form">
                 <?php if (!empty($err_msg['comment'])) echo $err_msg['comment']; ?><br>
-                感想<textarea type='text' name='comment'><?php echo getFormData('comment'); ?></textarea>
-            </div>
+                感想<br><textarea cols='85' rows='12' type='text' name='comment'><?php echo getFormData('comment'); ?></textarea>
+            </div><br>
             <div class='input_form'>
                 写真1
                 <input type='file' name='pic1' class='postImgPost'><br>

@@ -57,30 +57,31 @@ require('head.php');
             ?>
 
             <div class='input_form'>
-                プロフィール画像
+                プロフィール画像<br>
                 <input type='file' name='pic' class='profImgPost'><br>
                 <img class='profImg' src=" <?php echo getFormData('pic'); ?>" style="<?php if (empty(getFormData('pic'))) echo 'display:none;' ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['username'])) echo $err_msg['username']; ?>
-                ユーザー名<input type='text' name='username' value="<?php echo getFormData('username'); ?>">
+                ユーザー名<br><input type='text' name='username' value="<?php echo getFormData('username'); ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['email'])) echo $err_msg['email']; ?>
-                メールアドレス<input type='text' name='email' value="<?php echo getFormData('email'); ?>">
+                メールアドレス<br><input type='text' name='email' value="<?php echo getFormData('email'); ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['tel'])) echo $err_msg['tel']; ?>
-                電話番号<input type='text' name='tel' value="<?php echo getFormData('tel'); ?>">
+                電話番号<br><input type='text' name='tel' value="<?php echo getFormData('tel'); ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['likeView'])) echo $err_msg['likeView']; ?>
-                お気に入りの絶景<input type='text' name='likeView' value="<?php echo getFormData('likeView'); ?>">
+                お気に入りの絶景<br><input type='text' name='likeView' value="<?php echo getFormData('likeView'); ?>">
             </div>
             <div class='input_form'>
                 <?php if (!empty($err_msg['myself'])) echo $err_msg['myself']; ?>
-                自己紹介<textarea type='text' name='myself'><?php echo getFormData('myself'); ?></textarea>
+                自己紹介<br><textarea cols='85' rows='12' type='text' name='myself'><?php echo getFormData('myself'); ?></textarea>
             </div>
+            <br>
             <input type='submit' value='変更する'>
         </form>
         <a href='logout.php'>Logout</a>　|　<a href='delete.php'>退会する</a>
