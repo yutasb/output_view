@@ -15,11 +15,13 @@ body {
   left: 150px;
   font-size: 80px;
   font-weight: bold;
+  font-family: "Kalam", cursive;
 }
 
 .topPageButton {
-  margin-top: 400px;
+  margin-top: 450px;
   margin-left: 500px;
+  margin-bottom: 80px;
 }
 
 .discription1,
@@ -27,7 +29,7 @@ body {
 .discription3 {
   margin-top: 30px;
   float: left;
-  background-color: rgba(92, 192, 238, 0.7);
+  background-color: rgba(92, 192, 238, 0.4);
   margin-left: 20px;
   padding: 20px;
   text-align: center;
@@ -74,6 +76,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
   cursor: pointer;
 }
+.searchSubmit {
+  margin-left: 20px;
+  background: white !important;
+  color: rgb(20, 173, 173) !important;
+}
 
 .loginSubmit {
   background: white !important;
@@ -87,11 +94,13 @@ input[type="submit"]:hover {
   height: 400px;
 }
 .side {
-  margin-top: 130px;
-  background-color: rgba(83, 167, 245, 0.979);
-  width: 400px;
-  margin-left: 480px;
+  margin-top: 150px;
+  width: 200px;
+  margin-left: 80px;
   padding: 20px;
+  position: fixed;
+  float: left;
+  background: rgb(122, 216, 245);
 }
 
 .mainTitle {
@@ -101,8 +110,8 @@ input[type="submit"]:hover {
 }
 
 .profImg {
-  width: 80px !important;
-  height: 100px !important;
+  width: 120px !important;
+  height: 140px !important;
 }
 
 a {
@@ -121,6 +130,7 @@ a {
   width: 100%;
   top: 0;
   float: right;
+  font-family: "Kalam", cursive;
 }
 
 .menu li {
@@ -153,13 +163,13 @@ a {
   left: 92%;
 }
 .menu li:nth-child(2):hover ~ .menu--bar {
-  left: 81%;
+  left: 83%;
 }
 .menu li:nth-child(3):hover ~ .menu--bar {
-  left: 71%;
+  left: 74%;
 }
 .menu li:nth-child(4):hover ~ .menu--bar {
-  left: 63%;
+  left: 66%;
 }
 
 .contents {
@@ -171,7 +181,7 @@ a {
 
 .mypageContents {
   text-align: center;
-  margin-top: 30px !important;
+  margin-top: 130px !important;
   width: 100%;
   margin: 0 auto;
 }
@@ -187,13 +197,12 @@ a {
   height: 40px !important;
 }
 
-.footer {
+footer {
   bottom: 0;
   margin: 0 auto;
-
   text-align: center;
-  background-color: rgb(17, 90, 226);
-  padding: 10px;
+  background-color: rgb(174, 201, 252);
+  padding: 5px;
 }
 
 .icn-like {
@@ -220,8 +229,8 @@ a {
 .content-box {
   background: #22aeff;
 
-  padding: 30px;
-  width: 530px;
+  padding: 50px;
+  width: 500px;
   height: 440px;
   margin: 0 auto;
   margin-top: 100px;
@@ -280,4 +289,9 @@ a {
   vertical-align: middle;
   position: relative;
   top: -4px;
+}
+
+.out {
+  margin-bottom: 50px;
+  margin-top: 30px;
 }

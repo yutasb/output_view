@@ -26,7 +26,7 @@ require('head.php');
     <div class="side">
         <form method='get' name=''>
 
-            カテゴリ　　<select name='c_id'>
+            カテゴリ　<select name='c_id'>
                 <option value='0' <?php if (getFormData('c_id', true) == 0) {
                                         echo 'selected';
                                     } ?>>選択してください</option>
@@ -40,10 +40,11 @@ require('head.php');
                 <?php
                 }
                 ?>
-            </select>
-            <input type='submit' value='検索'>
+            </select><br><br>
+            <input type='submit' value='検索' class='searchSubmit'>
         </form>
     </div>
+    <hr>
     <div class='mypageContents'>
         <?php
         foreach ($dbPostData as $key => $val) {

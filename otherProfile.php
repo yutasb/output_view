@@ -34,11 +34,11 @@ require('head.php');
 <body>
     <div class='contents'>
         <form method='post'>
-            <img src="<?php echo showImg($checkOther['pic']); ?>" class='profImg'><br>
-            　ユーザー名<br><?php echo $checkOther['username']; ?><br>
-            お気に入りの絶景<br><?php echo $checkOther['likeView']; ?><br>
-            ひとこと<br><?php echo $checkOther['myself']; ?><br><br>
-            <input type='submit' name='toMsg' value='メッセージを送る'>
+            <img src="<?php echo showImg($checkOther['pic']); ?>" class='profImg'><br><br>
+            　<?php echo $checkOther['username']; ?><br><br>
+            お気に入りの絶景：<?php echo $checkOther['likeView']; ?><br><br>
+            <?php echo nl2br($checkOther['myself']); ?><br><br>
+
         </form>
 
         <?php

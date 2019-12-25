@@ -138,7 +138,7 @@ require('head.php');
                 写真3
                 <input type='file' name='pic3' class='postImgPost'><br>
                 <img class='postImg' src=" <?php echo getFormData('pic3'); ?>" style="<?php if (empty(getFormData('pic3'))) echo 'display:none;' ?>">
-            </div>
+            </div><br>
             <input type='submit' value="<?php echo (!$edit_flg) ? '投稿する' : '更新する'; ?>"><br>
             <input type='submit' name='delete' value="<?php echo (!$edit_flg) ? '' : '削除する'; ?>" style="<?php if (empty($edit_flg)) echo 'display:none;' ?>">
         </form>

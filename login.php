@@ -65,12 +65,14 @@ require('head.php')
                 <label>
                     <input type='checkbox' name='save_pass'>次回ログインを省略する<br>
                 </label>
-                <br>
+                <br><br><br>
 
                 <input type='submit' value='ログイン' class='loginSubmit'>
             </form>
         </div>
     </div>
+
+
 </body>
 
 </html>

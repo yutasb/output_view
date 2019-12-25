@@ -352,16 +352,18 @@
         }
     }
 
-    function checkIcon()
+    function checkIcon($p_id)
     {
         try {
             $dbh = dbConnect();
-            $sql = "SELECT u.id, u.username, u.pic, p.id FROM view_post AS p JOIN users As u ON p.user_id=u.id WHERE u.delete_flg=0 AND p.delete_flg=0";
-            $data = array();
+            $sql = "SELECT u.id, u.username, u.pic, p.id FROM view_post AS p JOIN users As u ON p.user_id=u.id WHERE p.id=:p_id AND u.delete_flg=0 AND p.delete_flg=0";
+            $data = array(':p_id' => $p_id);
             $stmt = queryPost($dbh, $sql, $data);
             if ($stmt) {
+                debug('クエリ成功（アイコン取得）');
                 return $stmt->fetch(PDO::FETCH_ASSOC);
             } else {
+                debug('クエリ失敗（アイコン取得）');
                 return false;
             }
         } catch (Exception $e) {

@@ -5,7 +5,7 @@ require('function.php');
 require('menu_bar.php');
 $p_id = (!empty($_GET['p_id'])) ? $_GET['p_id'] : '';
 $checkView = checkViewPost($p_id);
-$checkIcon = checkIcon();
+$checkIcon = checkIcon($p_id);
 
 
 
@@ -21,17 +21,21 @@ require('head.php');
 <body>
     <div class='detail-prof'>
         <!-- <i class はiconawesomeでのハートの表記コード -->
-        <i class="fa fa-heart icn-like js-click-like <?php if (isLike($_SESSION['user_id'], $checkView['id'])) {
-                                                            echo 'active';
-                                                        } ?>" aria-hidden="true" data-viewid="<?php echo $checkView['id']; ?>"></i><br>
 
-        <p class='detail_username'> ユーザーネーム：<?php echo $checkIcon['username']; ?></p><br>
+
         <a href="otherProfile.php<?php echo '?u_id=' . $checkView['user_id']; ?>"><img src="<?php echo showImg($checkIcon['pic']); ?>" class='detail_icon'></a>
+        <p class='detail_username'><?php echo $checkIcon['username']; ?></p><br>
     </div>
     <div class="contents">
+
+
         <span class='badge'><?php echo $checkView['type']; ?></span>
         <p class='detail_when'><?php echo $checkView['when_see']; ?>
-            　　<?php echo $checkView['where_see']; ?></p><br>
+            　　<?php echo $checkView['where_see']; ?></p>
+        <i class="fa fa-heart icn-like js-click-like <?php if (isLike($_SESSION['user_id'], $checkView['id'])) {
+                                                            echo 'active';
+                                                        } ?>" aria-hidden="true" data-viewid="<?php echo $checkView['id']; ?>"></i>
+
         <div class="img">
             <img src="<?php echo showImg($checkView['pic1']); ?>" id='js-switch-img-main'>
             <div class='img-subs'>
@@ -41,7 +45,7 @@ require('head.php');
             </div>
         </div>
         <p class='detail_title'><?php echo $checkView['post_title']; ?></p><br>
-        <p class='detail_comment'><?php echo $checkView['comment']; ?></p><br><br><br>
+        <p class='detail_comment'><?php echo nl2br($checkView['comment']); ?></p><br><br><br>
         <a href="mypage.php<?php echo appendGetParam((array('p_id'))); ?>">戻る</a>
 
     </div>

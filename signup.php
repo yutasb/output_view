@@ -77,7 +77,7 @@ require('head.php');
 
                     パスワード（再入力）　<?php if (!empty($err_msg['pass_re'])) echo $err_msg['pass_re']; ?><br><input type='password' name='pass_re' value='<?php if (!empty($_POST['pass_re'])) echo $_POST['pass_re']; ?>'>
                 </div>
-                <br>
+                <br><br><br>
                 <input type='submit' value='登録'>
             </form>
         </div>
