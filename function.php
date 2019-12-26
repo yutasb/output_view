@@ -144,7 +144,7 @@
     function dbConnect()
     {
         $db = parse_url($_SERVER['mysql://b842d53109bb1c:366265b3@us-cdbr-iron-east-05.cleardb.net/heroku_b74f4a3d8a0f14c?reconnect=true']);
-        $db['heroku_b74f4a3d8a0f14c'] = ltrim($db['path'], '/');
+        $db['heroku_b74f4a3d8a0f14c'] = ltrim($db['/var/lib/mysql/mysql.sock'], '/');
         $dsn = "mysql:host={$db['us-cdbr-iron-east-05.cleardb.net']};dbname={$db['heroku_b74f4a3d8a0f14c']};charset=utf8";
         $user = $db['b842d53109bb1c'];
         $password = $db['366265b3'];
