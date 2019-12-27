@@ -1,4 +1,5 @@
 <?php
+$siteTitle = 'トップページ';
 require('head.php');
 ?>
 

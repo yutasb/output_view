@@ -20,7 +20,7 @@ body {
 
 .topPageButton {
   margin-top: 450px;
-  margin-left: 500px;
+  margin-left: 440px;
   margin-bottom: 80px;
 }
 
@@ -30,14 +30,17 @@ body {
   margin-top: 30px;
   float: left;
   background-color: rgba(92, 192, 238, 0.4);
-  margin-left: 20px;
-  padding: 20px;
+  margin-left: 10px;
   text-align: center;
   line-height: 3em;
 }
 
 .discriptions {
   margin: 0 auto;
+}
+
+.discriptions h2 {
+  font-weight: bold;
 }
 
 input[type="button"] {
