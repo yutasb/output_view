@@ -13299,3 +13299,56 @@ Stack trace:
 )
 
 [25-Dec-2019 13:59:24 UTC] デバッグ:ログアウト
+[27-Dec-2019 12:10:40 UTC] PHP Notice:  Undefined index: CLEARDB_DATABASE_URL in /Applications/MAMP/htdocs/output_view/function.php on line 146
+[27-Dec-2019 12:10:40 UTC] PHP Notice:  Undefined index: host in /Applications/MAMP/htdocs/output_view/function.php on line 148
+[27-Dec-2019 12:10:40 UTC] PHP Notice:  Undefined index: user in /Applications/MAMP/htdocs/output_view/function.php on line 149
+[27-Dec-2019 12:10:40 UTC] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output_view/function.php on line 150
+[27-Dec-2019 12:10:40 UTC] エラー発生:SQLSTATE[HY000] [2002] No such file or directory
+[27-Dec-2019 12:11:27 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:27 UTC] デバッグ:パスワードがマッチ
+[27-Dec-2019 12:11:27 UTC] デバッグ:ログイン保持チェックなし
+[27-Dec-2019 12:11:27 UTC] デバッグ:セッション変数の中身：Array
+(
+    [login_data] => 1577448687
+    [login_limit] => 3600
+    [user_id] => 9
+)
+
+[27-Dec-2019 12:11:27 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:27 UTC] デバッグ:SELECT u.id AS uid, u.pic, p.id, p.post_title, p.pic1, p.type_id FROM view_post AS p JOIN users AS u ON p.user_id = u.id WHERE p.delete_flg=0 AND u.delete_flg= 0 
+[27-Dec-2019 12:11:27 UTC] デバッグ:クエリ成功（検索）
+[27-Dec-2019 12:11:27 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:27 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:27 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:27 UTC] デバッグ:1811マチュピチュ4
+[27-Dec-2019 12:11:27 UTC] デバッグ:199道6
+[27-Dec-2019 12:11:27 UTC] デバッグ:2111ドイツ6
+[27-Dec-2019 12:11:27 UTC] デバッグ:2212ウユニ塩湖3
+[27-Dec-2019 12:11:31 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:31 UTC] デバッグ:SELECT u.id AS uid, u.pic, p.id, p.post_title, p.pic1, p.type_id FROM view_post AS p JOIN users AS u ON p.user_id = u.id WHERE p.delete_flg=0 AND u.delete_flg= 0 
+[27-Dec-2019 12:11:31 UTC] デバッグ:クエリ成功（検索）
+[27-Dec-2019 12:11:31 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:31 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:31 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:31 UTC] デバッグ:1811マチュピチュ4
+[27-Dec-2019 12:11:31 UTC] デバッグ:199道6
+[27-Dec-2019 12:11:31 UTC] デバッグ:2111ドイツ6
+[27-Dec-2019 12:11:31 UTC] デバッグ:2212ウユニ塩湖3
+[27-Dec-2019 12:11:35 UTC] デバッグ:ユーザー情報取得
+[27-Dec-2019 12:11:35 UTC] デバッグ:クエリ成功02
+[27-Dec-2019 12:11:35 UTC] デバッグ:取得したユーザー:Array
+(
+    [id] => 9
+    [pic] => img/ae8a90e7166ad9fce65373fb6642fe0a2d5738a2.png
+    [username] => 少年
+    [email] => aaa@gmail.com
+    [tel] => 08066781229
+    [likeView] => 日本
+    [myself] => よろしくお願いします。
+    [password] => $2y$10$IzZ3JddOeqZFIKe93x/J9upzqHqFaAmCO4WeYxVHveGgJKDU05stC
+    [delete_flg] => 0
+    [create_date] => 2019-12-19 14:14:20
+    [login_time] => 2019-12-19
+)
+
+[27-Dec-2019 12:11:38 UTC] デバッグ:ログアウト
