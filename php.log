@@ -14163,3 +14163,8 @@ Stack trace:
 [28-Dec-2019 17:13:13 UTC] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output_view/function.php on line 150
 [28-Dec-2019 17:13:13 UTC] エラー発生SQLSTATE[HY000] [2002] No such file or directory
 [28-Dec-2019 17:13:13 UTC] デバッグ:バリデーション01
+[30-Dec-2019 08:17:18 UTC] PHP Notice:  Undefined index: CLEARDB_DATABASE_URL in /Applications/MAMP/htdocs/output_view/function.php on line 147
+[30-Dec-2019 08:17:18 UTC] PHP Notice:  Undefined index: host in /Applications/MAMP/htdocs/output_view/function.php on line 149
+[30-Dec-2019 08:17:18 UTC] PHP Notice:  Undefined index: user in /Applications/MAMP/htdocs/output_view/function.php on line 150
+[30-Dec-2019 08:17:18 UTC] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/output_view/function.php on line 151
+[30-Dec-2019 08:17:18 UTC] エラー発生:SQLSTATE[HY000] [2002] No such file or directory

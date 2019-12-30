@@ -3,6 +3,12 @@
     ini_set('log_errors', 'on');
     ini_set('error_log', 'php.log');
 
+    ini_set('session.save_handler', 'memcached');
+    ini_set('session.save_path', 'PERSISTENT=pool ' . getenv('MEMCACHIER_SERVERS'));
+    ini_set('memcached.sess_binary', 1);
+    ini_set('memcached.sess_sasl_username', getenv('MEMCACHIER_USERNAME'));
+    ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
+
     //デバッグ用
     $debug_flg = true;
     function debug($str)
@@ -141,6 +147,7 @@
     //     return $dbh;
     // }
 
+    //Heroku用
     function dbConnect()
     {
         $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
