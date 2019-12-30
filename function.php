@@ -92,22 +92,22 @@
     }
 
     //最大文字数
-    function validMaxpass($str, $key, $max = 255)
-    {
-        global $err_msg;
-        if (mb_strlen($str) > $max) {
-            $err_msg[$key] = MSG04;
-        }
-    }
-    //パスワードの最小文字数
-    function validMinpass($str, $key, $min = 6)
-    {
-        global $err_msg;
-        if (mb_strlen($str) < $min) {
-            $err_msg[$key] = MSG05;
-        }
-    }
-    //半角英数字チェック
+    // function validMaxpass($str, $key, $max = 255)
+    // {
+    //     global $err_msg;
+    //     if (mb_strlen($str) > $max) {
+    //         $err_msg[$key] = MSG04;
+    //     }
+    // }
+    // //パスワードの最小文字数
+    // function validMinpass($str, $key, $min = 6)
+    // {
+    //     global $err_msg;
+    //     if (mb_strlen($str) < $min) {
+    //         $err_msg[$key] = MSG05;
+    //     }
+    // }
+    // //半角英数字チェック
     function validWordtype($str, $key)
     {
         if (!preg_match("/^[a-zA-Z0-9]+$/", $str)) {
