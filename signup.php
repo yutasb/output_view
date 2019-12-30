@@ -16,8 +16,8 @@ if (!empty($_POST)) {
     if (empty($err_msg)) {
         validEmail($email, 'email');
         validEmailAlready($email);
-        validMaxpass($pass, 'pass');
-        validMinpass($pass, 'pass');
+        // validMaxpass($pass, 'pass');
+        // validMinpass($pass, 'pass');
         validWordtype($pass, 'pass');
         debug('バリデーション01');
 
