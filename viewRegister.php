@@ -29,18 +29,18 @@ if (!empty($_POST)) {
         validMust($when_see, 'when_see');
         validMust($where_see, 'where_see');
         validMust($comment, 'comment');
-        validMaxPass($title, 'title');
+        // validMaxPass($title, 'title');
     } else {
         if ($dbFormData['title'] !== $title) {
             validMust($title, 'title');
-            validMaxPass($title, 'title');
+            // validMaxPass($title, 'title');
         }
         if ($dbFormData['view_type'] !== $view_type) {
             validselect($view_type, 'view_type');
         }
-        if ($dbFormData['comment'] !== $comment) {
-            validMaxpass($comment, 'comment');
-        }
+        // if ($dbFormData['comment'] !== $comment) {
+        //     validMaxpass($comment, 'comment');
+        // }
     }
     if (empty($err_msg)) {
         debug('バリデーションOK（投稿）');

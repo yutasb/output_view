@@ -14,9 +14,9 @@ if (!empty($_POST)) {
     $pic = (!empty($_FILES['pic']['name'])) ? uploadImg($_FILES['pic'], 'pic') : '';
     $pic = (empty($pic) && !empty($dbFormData['pic'])) ? $dbFormData['pic'] : $pic;
 
-    if ($dbFormData['username'] !== $username) {
-        validMaxpass($username, 'username');
-    }
+    // if ($dbFormData['username'] !== $username) {
+    //     validMaxpass($username, 'username');
+    // }
     if ($dbFormData['email'] !== $email) {
         validEmail($email, 'email');
         if (empty($err_msg)) {
