@@ -5,7 +5,7 @@
 
         <ul class='menu'>
 
-            <li class='menu1'><a href='myProfile.php'>Myprofile</a></li>
+            <li class='menu1'><a href='myProfile.php'>My Profile</a></li>
             <li class='menu2'><a href='favorite.php'>Favorite</a></li>
             <li class='menu3'><a href='myViewPost.php'>My Post</a></li>
             <li class='menu4'><a href='viewRegister.php'>Post</a></li>
